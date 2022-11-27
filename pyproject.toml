@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "toolbox"
+version = "0.1.0"
+description = ""
+authors = ["Alex Newton <sharenfan222@gmail.com>"]
+license = "mit"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pillow = "^9.3.0"
+
+
+[tool.poetry.group.dev.dependencies]
+black = {version = "^22.10.0", allow-prereleases = true}
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
