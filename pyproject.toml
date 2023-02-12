@@ -9,10 +9,20 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.10"
 pillow = "^9.3.0"
+numpy = "^1.24.1"
+pywin32 = "^305"
+opencv-python = "^4.7.0.68"
 
 
 [tool.poetry.group.dev.dependencies]
 black = {version = "^22.10.0", allow-prereleases = true}
+
+
+[[tool.poetry.source]]
+name = "mirrors"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple/"
+default = true
+secondary = false
 
 [build-system]
 requires = ["poetry-core"]
